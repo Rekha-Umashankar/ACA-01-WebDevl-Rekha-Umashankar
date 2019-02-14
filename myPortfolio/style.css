@@ -1,0 +1,131 @@
+*{
+  margin:0px;
+  padding: 0px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+  }
+  header {
+    background-color: #131622;
+    background: linear-gradient(to bottom, #284b7a,rgb(0, 0, 0) 100%);  
+   
+ 
+  }
+ .details-area h2{
+    display:inline-block;
+    text-transform:uppercase;
+    letter-spacing: 5px;
+    padding: 15px;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+  }
+  .details-area h5{
+     display:inline-block;
+     text-transform:uppercase;
+     letter-spacing: 5px;
+     padding: 15px;
+     animation-name: moveInRight;
+     animation-duration: 1s;
+   }
+  .flexcon{
+    display:flex;
+    justify-content: flex-end;
+    
+  }
+ nav >a{
+    color:white;
+    margin-right: 10px;
+    padding: 20px 20px 0px 20px;
+    text-align: center;
+    font-size: 20px;
+    /* border-right: 2px solid white;  */
+    text-decoration: none;
+   
+ }
+.flexcon :hover{
+    background-color:red;
+}
+main{
+ 
+  background-color:#284b7a; 
+   
+}
+.main-container{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "image-area details-area";
+  color: white;
+}
+.image-area{
+  grid-area: image-area;
+
+}
+.details-area{
+  grid-area:details-area;
+}
+.image-area img{
+   width: 300px;
+   height: 200px;
+   text-align: center;
+   margin: 100px;
+   border-radius: 50%;
+}
+.details-area{
+  text-align:left;
+  padding-top: 80px;
+}
+#portfolio{
+  
+  width: 50%;
+  height: 15%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  background: transparent;
+  margin:10px;
+  padding: 20px; 
+  padding-bottom: 5%;
+  text-align: center;
+  color: white;
+  letter-spacing: 16px;
+  
+}
+footer{
+  background-color: #131622;
+  background: linear-gradient(to bottom, #284b7a,rgb(0, 0, 0) 100%); 
+
+} 
+i{
+  text-align: center;
+  font-size: 30px;
+}
+@keyframes moveInLeft{
+  0%{
+      opacity: 0;
+      transform: translateX(-100px);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInRight{
+  0%{
+    opacity: 0;
+    transform: translateX(100px) rotate(30deg);
+}
+100%{
+  opacity: 1;
+  transform: translate(0);
+}
+
+}
+footer{
+    max-width: 200px;
+    background-color: #131622;
+    background: linear-gradient(to bottom, #284b7a,rgb(0, 0, 0) 100%);  
+   
+}
